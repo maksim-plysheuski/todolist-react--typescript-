@@ -13,7 +13,9 @@ export const GetTodolists = () => {
         todolistAPI.getTodolists()
             .then((response) => setState(response.data))
     }, [])
-    return <div>{JSON.stringify(state)}</div>
+    return <div>
+        {JSON.stringify(state)}
+    </div>
 }
 export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
